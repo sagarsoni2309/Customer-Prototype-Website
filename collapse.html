@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<style>
+body {
+    font-family: "Times New Roman" ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+div.b {
+    text-align: left;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+
+<p>ACE ENTERPRISES</p>
+<button class="collapsible">Information</button>
+<div class="content">
+  <p>Registered in 2014, Ace Enterprises has made a name for itself in the list of top Software Development, 
+Website Development companies of India.<br>
+ Head office of ACE Enterprises is located in Maharishi Markhendeshwar Mullana,Ambala.<br>
+It has been ranked in Top 200 companies of India delivering excellent pipelines customer service. <br> 
+It is listed in Trade India's list of verified sellers offering quality as well as creativity. <br> 
+Feel free to contact us.</p>
+</div>
+
+<p>Robort Crawler Pipelines in the following Cities:</p>
+<button class="collapsible">Hyderabad</button>
+<div class="content">
+  <p>Hyderabad is known as the pearl city of India, it is the capital of Telangana in South India, according to the pipelines services this city has been ranked in 30 all over asia, It has become one big metropolis, this city was founded by RANGA REDDY  </p>
+</div>
+<button class="collapsible">Vijayawada</button>
+<div class="content">
+  <p>This city is located near the banks of river krishna in krishna district of the indian stae of Andra Pradesh, this city has been ranked 25 number in cases of pipeline services, the founder of this city was ARJUNA </p>
+</div>
+<button class="collapsible">Vizag</button>
+<div class="content">
+  <p>Visakhapatnam is known as Vizag, this is the largest and the finicial capital of our country, this city has been ranked 15 in pipelines services all over asia</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script><br><br>

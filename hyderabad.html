@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robort Crawler Pipelines</title>
+<style>
+body{
+  font-family: "Lato", sans-serif;
+} 
+
+.header { background-color:white;}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+body{
+    background: #660033;
+  }
+  input[type=text] {
+    width: 70%
+    border-sizing:border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size:20px;
+    background: white;
+    background-position: 40px 40px;
+    background-repeat: no-repeat;
+    padding: 10px 15px 10px 15px;
+    margin-right: : 15px; 
+  }
+*{
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  background: white;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.nav{
+  background: #fff;
+  min-height: 59px;
+  overflow: auto;
+}
+.nav .right{
+  float: right;
+  margin-left: lem;
+}
+ul{
+  list-style: none;
+}
+.nav .right li{
+  float:right;
+}
+a{
+  display: block;
+  padding: 17px 20px;
+  line-height: 30px;
+  color: #191919;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav .right a:hover{
+  background: #99ccff;
+}
+button{
+  float: search box right;
+  background:orange;
+  color:white;
+  border: pointer; 
+  position: relative;
+  padding: 7px;
+  font-family: sans-serif;
+  border: thick;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    <center><img src ="ace-enter.png" width ="500px" height ="300px"</center>   
+    </div>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="180044_A_CPS_W9P3T3_CustomerWebsite-V1.html">HOME</a>
+  <a href="hyderabad.html">Hyderabad</a>
+  <a href="vijayawada.html">Vijayawada</a>
+  <a href="vizag.html">Vizag</a>
+  <a href="distance.html">Distance Calculator</a>
+  
+</div>
+
+<h2>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+       
+
+
+  
+<nav class ="nav">
+    <div class ="nav-mobile">
+        <ul class ="right">
+           <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+           <li><a href="#"><i class="fa fa-user"></i> About</a></li>
+           
+       </ul>
+      <form action="https://www.google.com/search" class="searchform" align="right" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden">
+<input autocomplete="off" class="form-control search" name="q" placeholder="Search" required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+     </div>
+</nav>
+    <div id="map" style="width:100%;height:500px"></div>
+
+    <script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(16.5062,80.6480);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  
+  var marker = new google.maps.Marker({position:new google.maps.LatLng(17.3850,78.4867),
+map:map,
+title:"Hyderabad, oil.ltd, LatLng(17.3850,78.4867)"});
+marker.setMap(map)
+
+  google.maps.event.addListener(marker,'click',function() {
+    var pos = map.getZoom();
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+    window.setTimeout(function() {map.setZoom(pos);},3000);
+  });
+}
+</script>
+<br>
+<center><h6><footer>&copy; Copyright All rights reserved</footer></h6></center>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXKQDcVdn-OZ-h68099FpCUTxoVxLvWFk&callback=myMap"></script>
+</body>
+</html>
